@@ -47,4 +47,4 @@ def search(request):
                 messages.error(request, f'No results FOUND!')
         else:
             return redirect('flick-home')
-    return redirect('flick-home')
+    return render(request,'flick-home')
