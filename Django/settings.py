@@ -25,7 +25,7 @@ SECRET_KEY = '2=j1y^(6)1wsnb6p*@x^%lba#+4!!nl3wpxplbylzib3w^su@j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['flickbingo.herokuapp.com','localhost']
 
 
 # Application definition
