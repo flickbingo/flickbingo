@@ -1,0 +1,19 @@
+{% extends 'flick/base.html' %}
+{% block content %}
+<h3>These are the search results...</h3>
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}">
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+{% if match %}
+<ol>
+    {% for item in match %}
+    <li><a href="{% url 'flick-user-posts' item.username %}"
+            style="color: #000055; font-size: 2rem; ">{{ item.username }}</a></li>
+    {% endfor %}
+</ol>
+{% endif %}
+{% endblock content %}

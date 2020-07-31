@@ -1,0 +1,38 @@
+{% extends 'flick/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Contact Us</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container" style=" display:grid; place-items: center;">
+    <div class="card" style="width: 18rem;">
+        <h3 style="text-align: center; margin: 10px;">Contact us:</h3>
+        <ul class="list-group list-group-flush" style="text-align: center;">
+            <li class="list-group-item" style="color:#000055; margin: 3px;"><i
+                    class="icon fa fa-envelope fa-2x"></i><br><a
+                    href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsLSDPfrhtPWdwtDJFkKlCBBbwpSGvltBtRFsRsMLDfDfTfvhZcRMJWbMGkgHFpdZhQcSrVq"
+                    style="color:#000055;" target="_blank">flick.bingo.0@gmail.com</a></li>
+            <li class="list-group-item" style="color:#000055; margin: 3px;"><i
+                    class="icon fa fa-instagram fa-2x"></i><br><a href="https://www.instagram.com/flick.bingo.0/"
+                    style="color:#000055;" target="_blank">@flick.bingo.0</a>
+            </li>
+            <li class="list-group-item" style="color:#000055; margin: 3px;"><i
+                    class="icon fa fa-facebook-official fa-2x"></i><br><a href="{% url 'facebook' %}"
+                    style="color:#000055;">@Flic.K</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}
+
+{% block jsfiles %}
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+{% endblock jsfiles %}
